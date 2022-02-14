@@ -98,7 +98,7 @@ function startGame(){
         localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins') - amountBet))
         const a = setInterval(() => {
             console.log('asd')
-            randomNumberGenerated = randomNum(1,5)
+            randomNumberGenerated = randomNum(1,6)
             finalDisplay.innerHTML = randomNumberGenerated
             timeRunning += 0.1
             if(timeRunning >= 5){
