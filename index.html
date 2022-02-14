@@ -8,7 +8,28 @@
             color: white;
         }
     </style>
-    <script defer>
+   
+</head>
+<body>        
+  <ul>
+            <li><a href ='https://z-e-games.github.io/Homepage/'>Home</a></li>
+            <li><a href = https://z-e-games.github.io/GlitchedMainMenu//>Mission Reboot</a></li>
+            <li><a href ='https://z-e-games.github.io/LuckySelect/'>Lucky Slect(New!)</a></li>
+            <li style = float:right><a href="https://z-e-games.github.io/Shop/">Shop</a></li>
+            <li style = float:right><a href = https://z-e-games.github.io/Sign-In/>Sign in</a></li>
+  </ul>
+    <center><br><br><br>
+        Very Easy(1-5)(amount betting x2): <input id = 'very easy radio'type = 'radio' name="level select"><br>
+        Easy(1-10)(amount betting x5): <input id = 'easy radio'type = 'radio' name="level select"><br>
+        Medium(1-50)(amount betting x10): <input id = 'medium radio'type = 'radio' name="level select"><br>
+        Hard(1-100)(amount betting x15): <input id = 'hard radio'type = 'radio' name="level select"><br>
+        Amount Betting: <input type="number" id ='bet input'><br>
+        Your guess: <input type="number" id ='number input'>
+        <h1 id ='numbershow'>Final Number</h1>
+        <button onclick="startGame()">Play!</button>
+    </center>
+
+     <script>
 
         
      
@@ -70,7 +91,7 @@ function startGame(){
                 localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins')) + amountBet * 20)
                 setTimeout(() => {
 
-                location.reload()                }1000)    
+                location.reload()                },1000)    
 
             }else{
                 setTimeout(() => {
@@ -150,24 +171,5 @@ function startGame(){
         
        
     </script>
-</head>
-<body>        
-  <ul>
-            <li><a href ='https://z-e-games.github.io/Homepage/'>Home</a></li>
-            <li><a href = https://z-e-games.github.io/GlitchedMainMenu//>Mission Reboot</a></li>
-            <li><a href ='https://z-e-games.github.io/LuckySelect/'>Lucky Slect(New!)</a></li>
-            <li style = float:right><a href="https://z-e-games.github.io/Shop/">Shop</a></li>
-            <li style = float:right><a href = https://z-e-games.github.io/Sign-In/>Sign in</a></li>
-  </ul>
-    <center><br><br><br>
-        Very Easy(1-5)(amount betting x2): <input id = 'very easy radio'type = 'radio' name="level select"><br>
-        Easy(1-10)(amount betting x5): <input id = 'easy radio'type = 'radio' name="level select"><br>
-        Medium(1-50)(amount betting x10): <input id = 'medium radio'type = 'radio' name="level select"><br>
-        Hard(1-100)(amount betting x15): <input id = 'hard radio'type = 'radio' name="level select"><br>
-        Amount Betting: <input type="number" id ='bet input'><br>
-        Your guess: <input type="number" id ='number input'>
-        <h1 id ='numbershow'>Final Number</h1>
-        <button onclick="startGame()">Play!</button>
-    </center>
 </body>
 </html>
