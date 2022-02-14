@@ -21,7 +21,7 @@ function startGame(){
     if(EasyElement.checked === true && amountBet >= 50 && guess >= 1 && guess <= 100 && amountBet <= parseInt(localStorage.getItem('gold coins'))) {
         localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins') - amountBet))
             const a = setInterval(() => {
-            randomNumberGenerated = randomNum(1,10)
+            randomNumberGenerated = randomNum(1,11)
             finalDisplay.innerHTML = randomNumberGenerated
             timeRunning += 0.1
             if(timeRunning >= 5){
@@ -46,7 +46,7 @@ function startGame(){
         localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins') - amountBet))
         const a = setInterval(() => {
         console.log('asd')
-        randomNumberGenerated = randomNum(1,50)
+        randomNumberGenerated = randomNum(1,51)
         finalDisplay.innerHTML = randomNumberGenerated
         timeRunning += 0.1
         if(timeRunning >= 5){
@@ -56,7 +56,7 @@ function startGame(){
                 localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins')) + amountBet * 20)
                 setTimeout(() => {
 
-                location.reload()                })    
+                location.reload()                }1000)    
 
             }else{
                 setTimeout(() => {
@@ -72,7 +72,7 @@ function startGame(){
         localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins') - amountBet))
         const a = setInterval(() => {
         console.log('asd')
-        randomNumberGenerated = randomNum(1,100)
+        randomNumberGenerated = randomNum(1,101)
         finalDisplay.innerHTML = randomNumberGenerated
         timeRunning += 0.1
         if(timeRunning >= 5){
@@ -82,7 +82,7 @@ function startGame(){
                 localStorage.setItem('gold coins', parseInt(localStorage.getItem('gold coins')) + amountBet * 30)
                 setTimeout(() => {
 
-                location.reload()                })    
+                location.reload()                },1000)    
 
             }else{
                 setTimeout(() => {
@@ -110,7 +110,7 @@ function startGame(){
                     setTimeout(() => {
                 
                     location.reload()
-                    })    
+                    },1000)    
                 }else{
                     alert('you lost :(')
                     setTimeout(() => {     
