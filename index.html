@@ -30,7 +30,13 @@
     </center>
 
      <script>
-
+    window.console.log = function(){
+  console.error('Sorry , developers tools are blocked here....');
+  window.console.log = function() {
+      return false;
+  }
+}
+=
         
      
     const EasyElement = document.getElementById('easy radio')
